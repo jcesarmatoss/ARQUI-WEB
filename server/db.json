@@ -1,0 +1,86 @@
+{
+  "empleados": [
+    {
+      "id": 1,
+      "nombre": "Gonzalo Mori",
+      "puesto": "Ingeniero III",
+      "sueldo": 16000
+    },
+    {
+      "id": 2,
+      "nombre": "Cinthy Revilla",
+      "puesto": "Ingeniero II",
+      "sueldo": 15000
+    },
+    {
+      "id": 3,
+      "nombre": "Juan Perez",
+      "puesto": "Tester I",
+      "sueldo": 12000
+    },
+    {
+      "id": 4,
+      "nombre": "Roberto Moreno",
+      "puesto": "Dev0p II",
+      "sueldo": 14000
+    },
+    {
+      "id": 5,
+      "nombre": "Camila Samame",
+      "puesto": "Trainee",
+      "sueldo": 3900
+    },
+    {
+      "id": 6,
+      "nombre": "Cesar Matos",
+      "puesto": "Trainee",
+      "sueldo": 3500
+    },
+    {
+      "id": 9,
+      "nombre": "Diego",
+      "puesto": "desing",
+      "sueldo": "300"
+    },
+    {
+      "id": 12,
+      "nombre": "Raul",
+      "puesto": "tester",
+      "sueldo": 700
+    },
+    {
+      "id": 13,
+      "nombre": "Roberto",
+      "puesto": "Contador",
+      "sueldo": 800
+    },
+    {
+      "id": 14,
+      "nombre": "Juan Quispe",
+      "puesto": "Desarrollador",
+      "sueldo": 500
+    },
+    {
+      "id": 15,
+      "nombre": "Julian",
+      "puesto": "Tester",
+      "sueldo": 8000
+    },
+    {
+      "id": 16,
+      "nombre": "Ramiro",
+      "puesto": "Desarrollador",
+      "sueldo": 8000
+    }
+  ],
+  "oficinas": [
+    {
+      "id": 1,
+      "local": "Sede Principal"
+    },
+    {
+      "id": 2,
+      "local": "Sede San Borja"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<div>
+    <div>
+        <h2 *ngIf="EsInsertar">Agregar Empleado</h2>
+    </div>
+    <div>
+        <h2 *ngIf="!EsInsertar">Editar Empleado</h2>
+    </div>
+</div>
+<form [formGroup]="myForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Id</mat-label>
+        <input matInput formControlName="id" readonly="true">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" placeholder="Ingrese nombre...">
+        <div *ngIf="myForm.get('nombre')?.hasError('required')&& myForm.get('nombre')?.touched">
+            <span style="color:red">Este campo es obligatorio</span>
+        </div>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Puesto</mat-label>
+        <input matInput formControlName="puesto" placeholder="Ingrese puesto...">
+        <div *ngIf="myForm.get('puesto')?.hasError('required')&& myForm.get('puesto')?.touched">
+            <span style="color:red">Este campo es obligatorio</span>
+        </div>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Sueldo</mat-label>
+        <input matInput formControlName="sueldo" placeholder="Ingrese sueldo...">
+        <div *ngIf="myForm.get('sueldo')?.hasError('required')&& myForm.get('sueldo')?.touched">
+            <span style="color:red">Este campo es obligatorio</span>
+        </div>
+    </mat-form-field>
+    <br>
+    <br>
+    <button mat-raised-button color="primary" (click)="saveEmpleado()" [disabled]="myForm.invalid">Guardar</button>
+    <span> - </span>
+    <button mat-raised-button (click)="volverHome()" (click)="saveEmpleado()">Cancelar</button>
+</form>
